@@ -1,7 +1,8 @@
-const key = 41;//kere maşallah
+const key = 41;
 let attempt = document.getElementById("attempts");
 let att = 0;
 let uyarı = document.getElementById("lowHigh");
+let input = document.querySelector("#input");
 
 function myFunction() {
   while (true) {
@@ -21,5 +22,7 @@ function myFunction() {
                 break;
             }
         }
+      
     } attempt.innerHTML=`Deneme sayınız: ${att}`;
+    input.value = "";  
 }
